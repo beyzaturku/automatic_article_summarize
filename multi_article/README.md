@@ -8,6 +8,9 @@ Veri İşleme (PDF Parsing) -> Yapılandırılmış LLM İzleme -> Dağıtılabi
 # 🚀 Canlı Demo
 Projenin çalışan versiyonunu [BURAYA YAYINLADIĞINIZ HUGGING FACE / RENDER URL'SİNİ EKLEYİN] adresinden deneyimleyebilirsiniz.
 
+![Uygulama Arayüzü](multi_article/arayüz1.png)
+![Uygulama Arayüzü](multi_article/arayüz2.png)
+
 # 🛠️ Teknoloji Yığını (Tech Stack)
 <table>
   <thead>
@@ -82,4 +85,5 @@ docker run -p 8501:8501 makale-ozetleyici-mvp
 # 🧠 LLM Mühendisliği (Önemli)
 Bu projenin teknik gücü, sadece model kullanmak yerine, yapılandırılmış çıktı garantisi üzerine kurulmuştur:
 * **Prompt Mühendisliği:** Modele verilen talimat, çıktının kesinlikle Türkçe JSON formatında olmasını ve belirli anahtarları (veri_seti, metodoloji vb.) içermesini zorlar.
+
 * **JSON Temizleme:** LLM'lerin bazen JSON kod bloğu (```json) ile yanıt vermesi durumuna karşı Python kodu ile yanıt temizlenir ve json.loads ile güvenli bir şekilde ayrıştırılır.
